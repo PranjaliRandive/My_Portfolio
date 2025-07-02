@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio.<span class="animate" style="--i:1;"></span></a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#Professional Journey" class="active">Professional Journey</a>
+            <a href="#Skills" class="active">Skills</a>
+            <a href="#Projects" class="active">Projects</a>
+           <!--- <a href="#OpenSourceContribution" class="active">OpenSourceContribution</a>--->
+            <a href="#Achievements" class="active">Achievements</a>
+            <a href="#Connect with me" class="active">Connect with me</a>
+
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2;"></span>
+        </nav>
+
+        <div >
+            <a class="moon" id="darkmode-icon"><i class="fa-solid fa-moon"></i></a>
+            <a class="menu" id="menu-icon"><i class="fa-solid fa-align-justify"></i></a>
+        </div>
+
+    </header>
+
+    <!---Home Design-->
+    <section class="home show-animate" id="home">
+        <div class="home-content">
+            <h1>Hello, I am <span>Pranjali Randive</span><span class="animate" style="--i:2;"></span></h1>
+            <div class="text-animate">
+                <h3>Final Year Undergrad</h3>
+                <span class="animate" style="--i:3;"></span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit porro possimus iure 
+                laboriosam molestias ex sequi officiis doloremque dolores. Sit nisi iure illo. Earum, 
+                molestias ab! Corporis fuga eveniet perspiciatis?
+                <span class="animate" style="--i:4;"></span>
+            </p>
+
+            <div class="btn-box">
+                <a href="#" class="btn">Hire Me</a>
+                <a href="#" class="btn">Let's Talk</a>
+                <span class="animate" style="--i:5;"></span>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="https://www.linkedin.com/in/pranjali-randive"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/PranjaliRandive"><i class="fa-brands fa-github"></i></a>
+            <span class="animate" style="--i:6;"></span>
+        </div>
+
+        <div class="home-imgHover"></div>
+        <span class="animate home-img" style="--i:7;"></span>
+    </section>
+
+    <!---Professional Journey-->
+    <section class="education" id="education">
+        <h2 class="heading">My <span> Professional Journey</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education<span class="animate scroll" style="--i:2;"></span></h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="fa-solid fa-calendar"></i> 2022 - 2026</div>
+                            <h3>Priyadarshini JL College of Engineering</h3>
+                            <p>B.Tech in Artificial Intelligence</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="fa-solid fa-calendar"></i> 2020 - 2022</div>
+                            <h3>Shri. Shivaji Science College</h3>
+                            <p>Intermediate Examination</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="fa-solid fa-calendar"></i> 2020</div>
+                            <h3>Hadas High School</h3>
+                            <p>Matriculation</p>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:3;"></span>
+                </div>
+            </div>
+<!--------
+            <div class="education-column">
+                <h3 class="title">Experience<span class="animate scroll" style="--i:5;"></span></h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2017 - 2018</div>
+                            <h3>Web Developer - Intern</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Blanditiis dolorem harum
+                                dolorum debitis. Magni, iste! Perferendis
+                                laborum reprehenderit dolorum totam.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2018 - 2019</div>
+                            <h3>Web Developer - Full Time</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Blanditiis dolorem harum
+                                dolorum debitis. Magni, iste! Perferendis
+                                laborum reprehenderit dolorum totam.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2019 - 2020</div>
+                            <h3>Full Stack Developer - Full Time</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Blanditiis dolorem harum
+                                dolorum debitis. Magni, iste! Perferendis
+                                laborum reprehenderit dolorum totam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> ---->
+        </div>
+    </section>
+    <!--Skills-->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skill set</span><span class="animate scroll" style="--i:1;"></span></h2>
+        <div class="skills-icon">
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+                <p>C</p>
+            </div>
+
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <p>HTML5</p>
+            </div>
+
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <p>CSS3</p>
+            </div>
+
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                <p>Python</p>
+            </div>
+
+            <div class="skill">
+                <img src="SQL.png" alt="SQL">
+                <p>SQL</p>
+            </div>
+
+            <div class="skill">
+                <img src="DSA.png" alt="DSA">
+                <p>DSA</p>
+            </div>
+
+            <div class="skill">
+                <img src="OS.png" alt="Operating System" width="60" height="60">
+                <p>Operating System</p>
+            </div>
+
+            <div class="skill">
+                <img src="OOPs.png" alt="OOPs" width="60" height="60">
+                <p>OOPs</p>
+            </div>
+
+            <div class="skill">
+                <img src="AI.png" alt="AI" width="60" height="60">
+                <p>AI</p>
+            </div>
+
+            <div class="skill">
+                <img src="DBMS.png" alt="DBMS" width="60" height="60">
+                <p>DBMS</p>
+            </div>
+
+            <div class="skill">
+                <img src="ML.png" alt="Machine Learning" width="60" height="60">
+                <p>Machine Learning</p>
+            </div>
+
+            <div class="skill">
+                <img src="CN.png" alt="Networking" width="60" height="60">
+                <p>Computer Network</p>
+            </div>
+
+            <div class="skill">
+                <img src="Mongodb.png" alt="MERN" width="60">
+                <p>MongoDB</p>
+            </div>
+
+            <div class="skill">
+                <img src="EJS.png" alt="MERN" width="60">
+                <p>Express JS</p>
+            </div>
+
+            <div class="skill">
+                <img src="RJS.png" alt="MERN" width="60">
+                <p>React JS</p>
+            </div>
+
+            <div class="skill">
+                <img src="NJS.png" alt="MERN" width="60">
+                <p>Node JS</p>
+            </div>
+
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                <p>Git/GitHub</p>
+            </div>
+
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+                <p>Linux</p>
+            </div>
+
+            <div class="skill">
+                <img src="canva.jfif" alt="Canva" width="60" height="60">
+                <p>Canva</p>
+            </div>
+        </div>  
+
+
+        
+    </section>
+
+    <!--Projects-->
+
+    <!--OpenSourceContribution-->
+
+    <!--Achievements-->
+
+    <!--Connect with me-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Connect with <span>me</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <form class="form-sec">
+            <div class="form-row">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="form-row">
+                <input type="text" placeholder="Contact number">
+                <input type="text" placeholder="Email Subject" required>
+            </div>
+
+            <textarea name="text" id="Usermsg" placeholder="Enter Your Message here!" required></textarea>
+            <button type="Submit" class="sbt-btn">Submit</button>
+            
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; Copyright, All
+                Rights Reserved</p>
+
+                <span class="animate scroll" style="--i:1;"></span>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+
+            <span class="animate scroll" style="--i:3;"></span>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+
+
+    
+</body>
+</html>
