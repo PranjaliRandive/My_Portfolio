@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
-    border: border-box;
+    box-sizing: border-box;
     text-decoration: none;
     border: none;
     outline: none;
@@ -34,7 +34,7 @@ body {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: transparent;
+    background-color: #00d9e8;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +43,7 @@ body {
 }
 
 .header.sticky {
-    background: var(--bg-color);
+    background-color: #00d9e8;
 }
 
 .logo {
@@ -87,7 +87,6 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background-color: var(--second-bg-color);
     background: url('Home_pic.png') no-repeat;
     background-size: cover;
     background-position: center;
@@ -101,15 +100,14 @@ section {
 .home-content h1 {
     position: relative;
     display: inline-block;
-    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 5.12rem;
-    /* need to change here */
+    /* change here */
     font-weight: 700;
     line-height: 1.3;
 }
 
 .home-content h1 span {
-    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
 }
 
 .home-content .text-animate {
@@ -119,11 +117,12 @@ section {
 
 .home-content .text-animate h3 {
     /* change here */
-    font-size: 3.05rem;
+    font-size: 3rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: .7px var(--main-color);
-    background-image: linear-gradient(var(--main-color), var(--main-color));
+    white-space: nowrap;
+    -webkit-text-stroke: .7px #00d9e8;
+    background-image: linear-gradient(#00d9e8, #00d9e8);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-position: -33rem 0;
@@ -141,7 +140,7 @@ section {
     left: 0;
     width: 0;
     height: 100%;
-    border-right: 2px solid var(--main-color);
+    border-right: 2px solid #00d9e8;
     z-index: -1;
 }
 
@@ -152,16 +151,16 @@ section {
 
 .home-content p {
     position: relative;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     margin: 2rem 0 4rem;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 .btn-box {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 34.5rem;
+    width: 34.05rem;
     height: 5rem;
 }
 
@@ -172,8 +171,8 @@ section {
     align-items: center;
     width: 15rem;
     height: 100%;
-    background: var(--main-color);
-    border: .2rem solid var(--main-color);
+    background: #00d9e8;
+    border: .2rem solid #00d9e8;
     border-radius: .8rem;
     font-size: 1.8rem;
     font-weight: 600;
@@ -185,12 +184,13 @@ section {
 }
 
 .btn-box .btn:hover {
-    color: var(--main-color);
+    color: #00d9e8;
 }
 
 .btn-box .btn:nth-child(2) {
     background: transparent;
-    color: var(--main-color);
+    color: #00d9e8;
+    white-space: nowrap;
 }
 
 .btn-box .btn:nth-child(2):hover {
@@ -198,7 +198,7 @@ section {
 }
 
 .btn-box .btn:nth-child(2)::before {
-    background: var(--main-color);
+    background: #00d9e8;
 }
 
 .btn-box .btn::before {
@@ -233,10 +233,10 @@ section {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: .2rem solid var(--main-color);
+    border: .2rem solid #00d9e8;
     border-radius: 50%;
     font-size: 20px;
-    color: var(--main-color);
+    color: #00d9e8;
     z-index: 1;
     overflow: hidden;
     transition: .5s;
@@ -253,7 +253,7 @@ section {
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--main-color);
+    background: #00d9e8;
     z-index: -1;
     transition: .5s;
 }
@@ -279,7 +279,7 @@ section {
 }
 
 span {
-    color: var(--main-color);
+    color: #00d9e8;
 }
 
 .education .education-row {
@@ -301,7 +301,7 @@ span {
 
 .education-column .education-box {
     position: relative;
-    border-left: .2rem solid var(--main-color);
+    border-left: .2rem solid #00d9e8;                                                                                               
 }
 
 .education-box .education-content {
@@ -316,14 +316,14 @@ span {
     left: -1.1rem;
     width: 2rem;
     height: 2rem;
-    background: var(--main-color);
+    background: #00d9e8;
     border-radius: 50%;
 }
 
 .education-content .content {
     position: relative;
     padding: 1.5rem;
-    border: .2rem solid var(--main-color);
+    border: .2rem solid #00d9e8;
     border-radius: .6rem;
     margin-bottom: 2rem;
     overflow: hidden;
@@ -347,7 +347,7 @@ span {
 
 .education-content .content .year {
     font-size: 1.5rem;
-    color: var(--main-color);
+    color: #00d9e8;
     padding-bottom: .5rem;
 }
 
@@ -381,8 +381,8 @@ span {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 30px;
   padding: 20px;
-  max-width: 800px; /* Optional: limits total width */
-  margin: 0 auto;   /* Center the grid horizontally */
+  max-width: 800px; 
+  margin: 0 auto;   
 }
 
 .skill {
@@ -426,6 +426,19 @@ span {
     margin-bottom: 40px;
 }
 
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.heading span {
+  color: #00d9e8;
+}
+
+
 .form-sec {
     width: 100%;
     max-width: 800px;
@@ -443,7 +456,7 @@ span {
   flex: 1;
   padding: 15px;
   background-color: #0d1a2d;
-  border: 2px solid #00bfff;
+  border: 2px solid #00d9e8;
   border-radius: 5px;
   color: white;
   font-size: 16px;
@@ -453,7 +466,7 @@ span {
     height: 250px;
     padding: 15px;
     background-color: #0d1a2d;
-    border: 2px solid #00bfff;
+    border: 2px solid #00d9e8;
     border-radius: 5px;
     color: white;
     font-size: 16px;
@@ -501,8 +514,8 @@ span {
     justify-content: center;
     align-items: center;
     padding: .8rem;
-    background: var(--main-color);
-    border: .2rem solid var(--main-color);
+    background: #00d9e8;
+    border: .2rem solid #00d9e8;
     border-radius: .6rem;
     z-index: 1;
     overflow: hidden;
@@ -531,6 +544,267 @@ span {
 }
 
 .footer-iconTop a:hover i {
-    color: var(--main-color);
+    color: #00d9e8;
 }
 
+/* ANIMATION RELOAD AND SCROLL */
+.animate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: 98;
+}
+
+
+.logo .animate,
+.navbar .animate,
+#menu-icon .animate,
+.home.show-animate .animate {
+    animation: showRight 1s ease forwards;
+    animation-delay: calc(.3s * var(--i));
+}
+
+.animate.scroll {
+    transition: 1s ease;
+    transition-delay: calc(.3s / var(--i));
+    animation: none;
+}
+
+section:nth-child(odd) .animate.scroll,
+.footer .animate.scroll {
+    background: var(--second-bg-color);
+}
+
+.education .education-box .animate.scroll {
+    width: 105%;
+}
+
+.about.show-animate .animate.scroll,
+.education.show-animate .animate.scroll,
+.skills.show-animate .animate.scroll,
+.contact.show-animate .animate.scroll,
+.footer.show-animate .animate.scroll {
+    transition-delay: calc(.3s * var(--i));
+    width: 0;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: var(--second-bg-color);
+    background: #00d9e8;
+}
+
+::selection {
+    color: var(--second-bg-color);
+    background: #00d9e8;
+}
+
+
+/* BREAKPOINTS */
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 4%;
+    }
+
+    section {
+        padding: 10rem 4% 2rem;
+    }
+
+    .home {
+        padding: 0 4%;
+    }
+
+    .footer {
+        padding: 2rem 4%;
+    }
+}
+
+@media (max-width: 850px) {
+    .animate.home-img {
+        width: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        background: var(--bg-color);
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: #00d9e8;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        z-index: 1;
+        transition: .25s ease;
+        transition-delay: .25s;
+    }
+
+    .navbar.active {
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar .active-nav {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        z-index: -1;
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active .active-nav {
+        left: 0;
+        transition-delay: .25s;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        transform: translateX(-20rem);
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active a {
+        transform: translateX(0);
+        transition-delay: .25s;
+    }
+
+    .home-imgHover {
+        pointer-events: none;
+        background: var(--bg-color);
+        opacity: .6;
+    }
+}
+
+@media (max-width: 520px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home-content h1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-sci {
+        width: 160px;
+    }
+
+    .home-sci a {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 462px) {
+    .home-content h1 {
+        font-size: 5.2rem;
+    }
+
+    .education {
+        padding: 10rem 4% 5rem 5%;
+    }
+
+    .contact form .input-box .input-field {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 371px) {
+    .home {
+        justify-content: center;
+    }
+
+    .home-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+}
+
+
+/* KEYFRAMES ANIMATION */
+@keyframes homeBgText {
+
+    0%,
+    10%,
+    100% {
+        background-position: -33rem 0;
+    }
+
+    65%,
+    85% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes homeCursorText {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    65%,
+    78%,
+    85% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    75%,
+    81% {
+        opacity: 0;
+    }
+}
+
+@keyframes aboutSpinner {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
