@@ -408,7 +408,7 @@ span {
     height: 10px;
 }
 .achievements-container::-webkit-scrollbar-thumb {
-    background: #bbb;
+    background: #00d9e8;
     border-radius: 5px;
 }
 .achievements-container::-webkit-scrollbar-track {
