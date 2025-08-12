@@ -52,3 +52,27 @@ window.onscroll = () => {
     this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight
   );
 };
+
+
+// Initialize EmailJS
+(function() {
+    emailjs.init("KmfgP7JvvHGaNIEeg"); 
+})();
+
+// Handle form submit
+document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.getElementById("contact-form");
+
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        emailjs.sendForm("service_v13u7qn", "template_pveevnp", contactForm)
+            .then(function() {
+                alert("Message sent successfully!");
+                contactForm.reset();
+            }, function(error) {
+                alert("Failed to send message. Please try again.");
+                console.error("EmailJS Error:", error);
+            });
+    });
+});

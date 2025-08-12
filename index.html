@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Personal Potfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"><!--  -->
 
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -290,21 +291,20 @@
     <section class="contact" id="contact">
         <h2 class="heading">Connect with <span>Me!</span></h2>
         
-        <form class="form-sec">
+        <form id="contact-form" class="form-sec">
             <div class="form-row">
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email Address" required>
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-row">
+                <input type="text" name="contact" placeholder="Contact number">
+                <input type="text" name="subject" placeholder="Email Subject" required>
             </div>
 
-            <div class="form-row">
-                <input type="text" placeholder="Contact number">
-                <input type="text" placeholder="Email Subject" required>
-            </div>
-
-            <textarea name="text" id="Usermsg" placeholder="Enter Your Message here!" required></textarea>
-            <button type="Submit" class="sbt-btn">Submit</button>
-            
+            <textarea name="message" placeholder="Enter Your Message here!" required></textarea>
+            <button type="submit" class="sbt-btn">Submit</button>
         </form>
+
     </section>
 
     <!-- footer design -->
