@@ -539,7 +539,7 @@ span {
     margin-bottom: 40px;
 }
 
-.heading {
+.contact .heading {
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
@@ -807,10 +807,34 @@ section:nth-child(odd) .animate.scroll,
         transition-delay: .25s;
     }
 
+    .home {
+        min-height: auto;
+        padding: 8rem 4% 4rem;
+    }
+
     .home-imgHover {
         pointer-events: none;
         background: var(--bg-color);
         opacity: .6;
+    }
+
+    section {
+        padding: 8rem 4% 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .form-row { 
+        flex-direction: column; 
+    }
+
+    .form-row input { 
+        width: 100%; 
+    }
+
+    .contact textarea { 
+        height: 200px; 
     }
 }
 
@@ -824,23 +848,82 @@ section:nth-child(odd) .animate.scroll,
         flex-direction: column;
     }
 
+    .home-content .text-animate { 
+        width: 100%; 
+    }
+
+    .home-content .text-animate h3 {
+        white-space: normal;              /* allow wraps */
+        font-size: 1.8rem;
+        -webkit-text-stroke: 0;           /* solid text for readability on mobile */
+        background-image: none;
+        color: #00d9e8;
+    }
+
+    .home-content .text-animate h3::before { 
+        content: none; 
+    } /* remove typing bar */
+
     .home-sci {
-        width: 160px;
+        position: static;
+        margin-top: 2rem;
+        width: auto;
     }
 
     .home-sci a {
         width: 38px;
         height: 38px;
     }
+
+    .btn-box {
+        width: 100%;
+        gap: 1.2rem;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .btn-box .btn {
+        width: calc(50% - .6rem);    /* two in a row */
+        height: 4.4rem;
+        font-size: 1.6rem;
+    }
+
+    .btn-box .btn:nth-child(2) { 
+        white-space: normal; 
+    }
+
+    .skills-icon {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        padding: 12px;
+    }
+
+    .skill img { 
+        width: 80px; height: 80px; 
+    }
+
+    .skill p { 
+        font-size: 1.2rem; 
+    }
 }
 
 @media (max-width: 462px) {
     .home-content h1 {
-        font-size: 5.2rem;
+        font-size: 4.2rem;
     }
 
     .education {
         padding: 10rem 4% 5rem 5%;
+    }
+
+    .education-content .content h3,
+    .education-content .content h3 a { 
+        font-size: 1.8rem; 
+        word-break: break-word; 
+    }
+
+    .education-content .content p { 
+        font-size: 1.4rem; 
     }
 
     .contact form .input-box .input-field {
@@ -851,9 +934,20 @@ section:nth-child(odd) .animate.scroll,
         flex-direction: column-reverse;
     }
 
+    .footer-iconTop { 
+        margin-bottom: 1rem; 
+    }
+
     .footer p {
         margin-top: 2rem;
         text-align: center;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .home-content h1 { 
+        font-size: 4.2rem; line-height: 1.25; 
     }
 }
 
