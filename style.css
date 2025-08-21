@@ -125,6 +125,7 @@ section {
     background-image: linear-gradient(#00d9e8, #00d9e8);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
+    background-clip: text;
     background-position: 100%;
 }
 
